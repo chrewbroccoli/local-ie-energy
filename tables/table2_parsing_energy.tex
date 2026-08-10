@@ -1,0 +1,17 @@
+\begin{table}[htb]
+    \centering
+    \footnotesize
+    \caption{Total and per-page energy consumption (Wh) for PDF to Markdown conversion, over 500 documents per dataset. Per-page figures use each tool's own page count, which differs because Tesseract rasterizes the PDFs (3016 pages on Kleister-NDA, 1025 on VRDU) while Docling and DeepSeek-OCR~2 follow the PDF page structure (2934 and 915).}
+    \label{tab:energy_consumption_integrated}
+    \begin{tabular}{@{} l c c c c @{}}
+        \toprule
+        & \multicolumn{2}{c}{\textbf{Kleister-NDA}} & \multicolumn{2}{c}{\textbf{VRDU}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        \textbf{Tool} & \textbf{Total} & \textbf{/Pg.} & \textbf{Total} & \textbf{/Pg.} \\
+        \midrule
+        Tesseract      & 12.91 & 0.0043 & 4.87 & 0.0047 \\
+        Docling        & 4.38 & 0.0015 & 12.95 & 0.0141 \\
+        DeepSeek-OCR 2 & 220.49 & 0.0751 & 76.41 & 0.0835 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
