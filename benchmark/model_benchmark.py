@@ -520,7 +520,7 @@ class ModelBenchmark:
             task_ = KleisterNDATextTask(source="ocr_docling")
         elif task == "kleister_nda_deepseek":
             from benchmark.tasks.kleister_nda_text import KleisterNDATextTask
-            task_ = KleisterNDATextTask(source = "ocr_deepseek")
+            task_ = KleisterNDATextTask(source = "ocr_deepseek_final")
         elif task == "kleister_nda_tesseract":
             from benchmark.tasks.kleister_nda_text import KleisterNDATextTask
             task_ = KleisterNDATextTask(source = "ocr_tesseract")

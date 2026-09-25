@@ -1,5 +1,5 @@
-experiment_name: "kleister_nda_vl_quant"
-backend: "vllm-vl-test"
+experiment_name: "kleister_nda_vl_quant_1"
+backend: "vllm-vl-quant"
 
 hf_model:
   - name: "Qwen/Qwen3-VL-2B-Instruct"
